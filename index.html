@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tawsif Al Sami | Personal Website</title>
-
-<style>
+<title>Tawsif Al Sami | Home</title><style>
 * {
     margin: 0;
     padding: 0;
@@ -27,47 +24,79 @@ header {
 
 header h1 {
     color: #64f4ac;
-    font-size: 27px;
+    font-size: 28px;
 }
 
 header p {
-    margin-top: 8px;
     color: #c5cce0;
+    margin-top: 10px;
+}
+
+nav {
+    background: #151e35;
+    padding: 15px 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid #293452;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #64f4ac;
+    color: #0b1020;
 }
 
 main {
-    padding: 60px 20px;
+    padding: 55px 18px;
 }
 
 .profile {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
-    padding: 35px 20px;
+    padding: 35px 22px;
     background: #151e35;
-    border-radius: 20px;
     border: 1px solid #293452;
+    border-radius: 22px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #64f4ac;
+    margin-bottom: 22px;
 }
 
 .profile h2 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
 .profile p {
     color: #c5cce0;
     line-height: 1.8;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .button {
     display: inline-block;
-    padding: 12px 24px;
-    margin: 5px;
-    border-radius: 30px;
     background: #64f4ac;
     color: #0b1020;
     text-decoration: none;
     font-weight: bold;
+    padding: 12px 22px;
+    margin: 6px;
+    border-radius: 25px;
 }
 
 .button:hover {
@@ -75,262 +104,101 @@ main {
 }
 
 section {
-    padding: 25px 15px;
+    padding: 30px 15px;
+}
+
+section h2 {
+    color: #64f4ac;
+    margin-bottom: 15px;
+}
+
+section p {
+    color: #c5cce0;
+    line-height: 1.8;
 }
 
 footer {
-    padding: 25px 10px;
-    color: #9ca8c5;
     background: #121a30;
+    border-top: 1px solid #293452;
+    padding: 25px 15px;
+    color: #9ca8c5;
+    line-height: 1.8;
 }
-</style>
-</head>
 
-<body>
+footer a {
+    color: #64f4ac;
+    text-decoration: none;
+    margin: 0 7px;
+}
 
-<header>
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 9px 10px;
+        font-size: 13px;
+    }
+
+    .profile h2 {
+        font-size: 23px;
+    }
+}
+</style></head><body><header>
     <h1>TAWSIF AL SAMI</h1>
     <p>Welcome to My Personal Website</p>
-</header>
+</header><nav>
+    <a href="index.html">Home</a>
+    <a href="about.html" target="_blank">About Me ↗</a>
+    <a href="photos.html" target="_blank">Photos ↗</a>
+    <a href="friends.html" target="_blank">Friends ↗</a>
+    <a href="tour.html" target="_blank">Tour & Memories ↗</a>
+    <a href="social.html" target="_blank">Social Accounts ↗</a>
+</nav><main>
+    <div class="profile">    <img
+        src="profile.jpg"
+        alt="Tawsif Al Sami"
+        class="profile-img"
+    >
 
-<main>
-    <div class="profile">
-        <h2>Hello,  Asslamualikum I'm Tawsif! 👋</h2>
+    <h2>Assalamu Alaikum! 👋</h2>
 
-        <p>
-            Welcome to my personal website.
-            This is my own space on the internet
-            where I can share my interests,
-            hobbies and future projects.
-        </p>
-
-        <a class="button" href="#about">About Me
-        <!-- About Me Section -->
-<section id="about" class="about-section">
-    <div class="about-card">
-        <h2>About Me</h2>
-        <p class="tagline">Student | Football Lover | Dream Big 🚀</p>
-        
-        <p class="about-intro">
-            Hello! I am <strong>Tawsif Al Sami</strong>, a dedicated student based in Chattogram, Bangladesh. 
-            I am passionate about learning new technologies, exploring digital innovations, and working on creative personal projects.
-        </p>
-
-        <!-- Personal Details Grid -->
-        <div class="details-grid">
-            <div class="detail-item">
-                <span class="detail-label">Full Name:</span>
-                <span class="detail-value">Tawsif Al Sami</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Occupation:</span>
-                <span class="detail-value">Student</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Date of Birth:</span>
-                <span class="detail-value">July 02, 2007</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Father's Name:</span>
-                <span class="detail-value">Golam Azam</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Mother's Name:</span>
-                <span class="detail-value">Jobeda Begum</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Gender:</span>
-                <span class="detail-value">Male</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Religion:</span>
-                <span class="detail-value">Islam</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Height:</span>
-                <span class="detail-value">5' 5"</span>
-            </div>
-            <div class="detail-item">
-                <span class="detail-label">Weight:</span>
-                <span class="detail-value">80 kg</span>
-            </div>
-            <div class="detail-item full-width">
-                <span class="detail-label">Address:</span>
-                <span class="detail-value">North Kattali, Bishaspara, Chattogram, Bangladesh</span>
-            </div>
-        </div>
-
-        <!-- Hobbies & Interests -->
-        <div class="interests-container">
-            <h3>Interests & Hobbies</h3>
-            <div class="interest-tags">
-                <span>⚽ Football</span>
-                <span>💻 Web Development</span>
-                <span>🚀 Exploring Tech</span>
-                <span>🎮 Gaming</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CSS Styling -->
-<style>
-    .about-section {
-        max-width: 850px;
-        margin: 40px auto;
-        padding: 0 20px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .about-card {
-        background: #ffffff;
-        border-radius: 16px;
-        padding: 35px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-        border: 1px solid #eef2f5;
-    }
-
-    .about-card h2 {
-        font-size: 2.2rem;
-        color: #1e293b;
-        margin-bottom: 5px;
-        text-align: center;
-    }
-
-    .tagline {
-        text-align: center;
-        color: #64748b;
-        font-size: 1.05rem;
-        margin-bottom: 25px;
-        font-weight: 500;
-    }
-
-    .about-intro {
-        color: #334155;
-        font-size: 1.05rem;
-        line-height: 1.7;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .details-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 15px;
-        background: #f8fafc;
-        padding: 25px;
-        border-radius: 12px;
-        border: 1px solid #e2e8f0;
-    }
-
-    .detail-item {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-    }
-
-    .detail-item.full-width {
-        grid-column: 1 / -1;
-    }
-
-    .detail-label {
-        font-size: 0.85rem;
-        color: #64748b;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-weight: 600;
-    }
-
-    .detail-value {
-        font-size: 1.05rem;
-        color: #0f172a;
-        font-weight: 600;
-    }
-
-    .interests-container {
-        margin-top: 30px;
-    }
-
-    .interests-container h3 {
-        color: #1e293b;
-        font-size: 1.3rem;
-        margin-bottom: 15px;
-    }
-
-    .interest-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .interest-tags span {
-        background: #eff6ff;
-        color: #2563eb;
-        padding: 8px 16px;
-        border-radius: 20px;
-        font-size: 0.95rem;
-        font-weight: 600;
-        border: 1px solid #bfdbfe;
-    }
-        </style></a>
-        <a class="button" href="#contact">Contact</a>
-    </div>
-</main>
-
-<section id="about">
-    <h2>About Me</h2>
-    <p style="margin-top: 15px; color: #c5cce0;">
-        Student | Football Lover | Dream Big 🚀
+    <p>
+        Welcome to my personal website!
+        I'm Tawsif Al Sami, a student from
+        Chattogram, Bangladesh.
+        This is my personal space to share
+        my interests, photos, friends,
+        travel memories and social accounts.
     </p>
-</section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p style="margin-top: 15px; color: #c5cce0;">
-        My personal website — more updates coming soon!
-    </p>
-</section>
-
-<footer>
-    © 2026 Tawsif Al Sami. All rights reserved.
-</footer>
-
-</body>
-</html>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <a class="button" href="https://www.instagram.com/sami49____/" target="_blank">
-        Instagram
+    <a class="button" href="about.html" target="_blank">
+        About Me
     </a>
 
-    <a class="button" href="https://www.facebook.com/share/1RWBLdE4K5/" target="_blank">
-        Facebook
+    <a class="button" href="social.html" target="_blank">
+        Contact Me
     </a>
-</section>
 
-<footer>
-    <p>© 2026 Tawsif Al Sami | All Rights Reserved</p>
-</footer>
-
-</body><!-- প্রোফাইল ছবি -->
-<div class="profile-container">
-    <img src="profile.jpg" alt="Tawsif Al Sami" class="profile-img">
 </div>
-</html>
-<style>
-    .profile-container {
-        text-align: center;
-        margin: 20px 0;
-    }
 
-    .profile-img {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid #ffffff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-            </style>
+</main><section>
+    <h2>Welcome to My World 🌍</h2>
+    <p>
+        Football ⚽ | Technology 💻 | Gaming 🎮 | Memories 📸
+    </p>
+</section><footer>
+    <p>© 2026 Tawsif Al Sami | All Rights Reserved</p><p>
+    <a href="index.html">Home</a> |
+    <a href="about.html" target="_blank">About</a> |
+    <a href="photos.html" target="_blank">Photos</a> |
+    <a href="social.html" target="_blank">Social</a>
+</p>
+
+</footer></body>
+</html>
