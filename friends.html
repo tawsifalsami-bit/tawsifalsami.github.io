@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Friends | Tawsif Al Sami</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: #121a30;
+    border-bottom: 1px solid #293452;
+}
+
+header h1 {
+    color: #64f4ac;
+    font-size: 28px;
+}
+
+header p {
+    color: #c5cce0;
+    margin-top: 8px;
+}
+
+nav {
+    background: #151e35;
+    padding: 14px 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background: #64f4ac;
+    color: #0b1020;
+}
+
+.intro {
+    text-align: center;
+    padding: 40px 18px 20px;
+}
+
+.intro h2 {
+    color: #64f4ac;
+    margin-bottom: 12px;
+}
+
+.intro p {
+    color: #c5cce0;
+    line-height: 1.8;
+}
+
+.cards {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px 18px 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #151e35;
+    border: 1px solid #293452;
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #64f4ac;
+    transform: translateY(-5px);
+}
+
+.emoji {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #64f4ac;
+    margin: 12px 0;
+}
+
+.card p {
+    color: #c5cce0;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    background: #64f4ac;
+    color: #0b1020;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 25px;
+    margin: 10px 0 35px;
+}
+
+.button-area {
+    text-align: center;
+}
+
+footer {
+    background: #121a30;
+    border-top: 1px solid #293452;
+    padding: 25px 15px;
+    color: #9ca8c5;
+    text-align: center;
+    line-height: 1.8;
+}
+
+footer a {
+    color: #64f4ac;
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>👥 MY FRIENDS</h1>
+    <p>Friendship • Memories • Good Times ❤️</p>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About Me</a>
+    <a href="photos/index.html">📸 Photos</a>
+    <a href="gaming.html">🎮 Gaming</a>
+    <a href="friends.html">👥 Friends</a>
+    <a href="tour.html">🌍 Tour</a>
+    <a href="videos.html">🎬 Videos</a>
+    <a href="social.html">🔗 Social</a>
+</nav>
+
+<section class="intro">
+    <h2>🤝 Friends Forever</h2>
+    <p>
+        Some moments become memories,
+        and some friends become family.
+        This page is dedicated to friendship
+        and the good times we share.
+    </p>
+</section>
+
+<main class="cards">
+
+    <article class="card">
+        <div class="emoji">🫂</div>
+        <h3>Best Friends</h3>
+        <p>My closest friends and the memories we share.</p>
+    </article>
+
+    <article class="card">
+        <div class="emoji">📸</div>
+        <h3>Friends Gallery</h3>
+        <p>Our favourite photos will be added here later.</p>
+    </article>
+
+    <article class="card">
+        <div class="emoji">😂</div>
+        <h3>Fun Moments</h3>
+        <p>Funny stories and unforgettable times together.</p>
+    </article>
+
+    <article class="card">
+        <div class="emoji">🌟</div>
+        <h3>Special Memories</h3>
+        <p>Celebrations, adventures and memorable days.</p>
+    </article>
+
+</main>
+
+<div class="button-area">
+    <a class="button" href="index.html">🏠 Back to Home</a>
+</div>
+
+<footer>
+    <p>Made with ❤️ by Tawsif Al Sami</p>
+    <p>© 2026 Tawsif Al Sami | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
