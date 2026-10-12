@@ -1,90 +1,107 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tawsif Al Sami | Home</title><style>
+
+<title>Tawsif Al Sami | Home</title>
+<meta name="description" content="Welcome to the personal website of Tawsif Al Sami. Explore photos, gaming, friends, travel memories and social accounts.">
+
+<style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #0b1020;
     color: white;
-    text-align: center;
+    line-height: 1.6;
 }
 
 header {
-    padding: 25px 15px;
-    background: #121a30;
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(135deg, #121a30, #192847);
     border-bottom: 1px solid #293452;
 }
 
 header h1 {
     color: #64f4ac;
-    font-size: 28px;
+    font-size: 30px;
+    letter-spacing: 1px;
 }
 
 header p {
     color: #c5cce0;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 nav {
     background: #151e35;
-    padding: 15px 8px;
+    padding: 14px 10px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     border-bottom: 1px solid #293452;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 14px;
+    padding: 9px 13px;
     border-radius: 20px;
+    font-size: 14px;
     transition: 0.3s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background: #64f4ac;
     color: #0b1020;
 }
 
-main {
-    padding: 55px 18px;
+.hero {
+    padding: 55px 18px 35px;
+    text-align: center;
 }
 
 .profile {
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     padding: 35px 22px;
     background: #151e35;
     border: 1px solid #293452;
-    border-radius: 22px;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px #00000025;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #64f4ac;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .profile h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 27px;
+    margin-bottom: 12px;
 }
 
 .profile p {
     color: #c5cce0;
-    line-height: 1.8;
     margin-bottom: 20px;
 }
 
@@ -94,111 +111,250 @@ main {
     color: #0b1020;
     text-decoration: none;
     font-weight: bold;
-    padding: 12px 22px;
-    margin: 6px;
+    padding: 11px 21px;
+    margin: 5px;
     border-radius: 25px;
+    transition: 0.3s;
 }
 
 .button:hover {
     background: white;
+    transform: translateY(-2px);
 }
 
-section {
-    padding: 30px 15px;
+.section-title {
+    text-align: center;
+    padding: 30px 15px 15px;
 }
 
-section h2 {
+.section-title h2 {
     color: #64f4ac;
-    margin-bottom: 15px;
+    font-size: 27px;
 }
 
-section p {
+.section-title p {
     color: #c5cce0;
-    line-height: 1.8;
+    margin-top: 8px;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 18px 55px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: block;
+    padding: 27px 20px;
+    background: #151e35;
+    border: 1px solid #293452;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.card:hover {
+    border-color: #64f4ac;
+    transform: translateY(-5px);
+    background: #192641;
+}
+
+.card .emoji {
+    display: block;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #64f4ac;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #c5cce0;
+    font-size: 14px;
 }
 
 footer {
+    text-align: center;
     background: #121a30;
     border-top: 1px solid #293452;
     padding: 25px 15px;
     color: #9ca8c5;
-    line-height: 1.8;
 }
 
-footer a {
+.footer-links {
+    margin: 12px 0;
+}
+
+.footer-links a {
     color: #64f4ac;
     text-decoration: none;
-    margin: 0 7px;
+    display: inline-block;
+    margin: 5px 8px;
+}
+
+footer small {
+    display: block;
+    margin-top: 12px;
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 23px;
+        font-size: 24px;
     }
 
     nav {
         gap: 5px;
+        padding: 10px 5px;
     }
 
     nav a {
-        padding: 9px 10px;
-        font-size: 13px;
+        font-size: 12px;
+        padding: 8px 9px;
     }
 
     .profile h2 {
         font-size: 23px;
     }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
-</style></head><body><header>
+</style>
+</head>
+
+<body>
+
+<header>
     <h1>TAWSIF AL SAMI</h1>
-    <p>Welcome to My Personal Website</p>
-</header><nav>
-    <a href="index.html">Home</a>
-    <a href="about.html" target="_blank">About Me ↗</a>
-    <a href="photos.html" target="_blank">Photos ↗</a>
-    <a href="friends.html" target="_blank">Friends ↗</a>
-    <a href="tour.html" target="_blank">Tour & Memories ↗</a>
-    <a href="social.html" target="_blank">Social Accounts ↗</a>
-</nav><main>
-    <div class="profile">    <img
-        src="profile.jpg"
-        alt="Tawsif Al Sami"
-        class="profile-img"
-    >
+    <p>✨ Welcome to My Personal Website ✨</p>
+</header>
 
-    <h2>Assalamu Alaikum! 👋</h2>
+<nav aria-label="Main navigation">
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">👤 About Me</a>
+    <a href="photos.html">📸 Photos</a>
+    <a href="gaming.html">🎮 Gaming</a>
+    <a href="friends.html">👥 Friends</a>
+    <a href="tour.html">🌍 Tour</a>
+    <a href="videos.html">🎬 Videos</a>
+    <a href="social.html">🔗 Social</a>
+    <a href="contact.html">📞 Contact</a>
+</nav>
 
-    <p>
-        Welcome to my personal website!
-        I'm Tawsif Al Sami, a student from
-        Chattogram, Bangladesh.
-        This is my personal space to share
-        my interests, photos, friends,
-        travel memories and social accounts.
-    </p>
+<main>
 
-    <a class="button" href="about.html" target="_blank">
-        About Me
+<section class="hero">
+    <div class="profile">
+
+        <img
+            src="images/profile.jpg"
+            alt="Tawsif Al Sami"
+            class="profile-img"
+        >
+
+        <h2>Assalamu Alaikum! 👋</h2>
+
+        <p>
+            Welcome to my personal website!
+            I'm Tawsif Al Sami, a student from
+            Chattogram, Bangladesh.
+            Explore my photos, gaming interests,
+            friends, travel memories and social accounts.
+        </p>
+
+        <a class="button" href="about.html">👤 About Me</a>
+        <a class="button" href="social.html">🔗 Find Me Online</a>
+
+    </div>
+</section>
+
+<section class="section-title">
+    <h2>🌟 Explore My World</h2>
+    <p>Choose a section to explore more!</p>
+</section>
+
+<section class="cards">
+
+    <a class="card" href="about.html">
+        <span class="emoji">👤</span>
+        <h3>About Me</h3>
+        <p>Learn more about me and my interests.</p>
     </a>
 
-    <a class="button" href="social.html" target="_blank">
-        Contact Me
+    <a class="card" href="photos.html">
+        <span class="emoji">📸</span>
+        <h3>My Photos</h3>
+        <p>Explore my photo gallery and special moments.</p>
     </a>
 
-</div>
+    <a class="card" href="gaming.html">
+        <span class="emoji">🎮</span>
+        <h3>Gaming Zone</h3>
+        <p>Gaming IDs, eFootball, Free Fire and screenshots.</p>
+    </a>
 
-</main><section>
-    <h2>Welcome to My World 🌍</h2>
-    <p>
-        Football ⚽ | Technology 💻 | Gaming 🎮 | Memories 📸
-    </p>
-</section><footer>
-    <p>© 2026 Tawsif Al Sami | All Rights Reserved</p><p>
-    <a href="index.html">Home</a> |
-    <a href="about.html" target="_blank">About</a> |
-    <a href="photos.html" target="_blank">Photos</a> |
-    <a href="social.html" target="_blank">Social</a>
-</p>
+    <a class="card" href="friends.html">
+        <span class="emoji">👥</span>
+        <h3>My Friends</h3>
+        <p>Friends, memories and good times together.</p>
+    </a>
 
-</footer></body>
+    <a class="card" href="tour.html">
+        <span class="emoji">🌍</span>
+        <h3>Tour & Memories</h3>
+        <p>Discover my trips and travel memories.</p>
+    </a>
+
+    <a class="card" href="videos.html">
+        <span class="emoji">🎬</span>
+        <h3>My Videos</h3>
+        <p>Watch videos and revisit memorable moments.</p>
+    </a>
+
+    <a class="card" href="social.html">
+        <span class="emoji">🔗</span>
+        <h3>Social Accounts</h3>
+        <p>Find my Facebook and Instagram profiles.</p>
+    </a>
+
+    <a class="card" href="contact.html">
+        <span class="emoji">📞</span>
+        <h3>Contact Me</h3>
+        <p>Find ways to connect with me online.</p>
+    </a>
+
+</section>
+
+</main>
+
+<footer>
+    <p>Made with ❤️ by Tawsif Al Sami</p>
+
+    <div class="footer-links">
+        <a href="index.html">🏠 Home</a>
+        <a href="about.html">👤 About</a>
+        <a href="photos.html">📸 Photos</a>
+        <a href="gaming.html">🎮 Gaming</a>
+        <a href="social.html">🔗 Social</a>
+    </div>
+
+    <small>Tawsif Al Sami 
+        ✉️ Email: tawsifalsami@gmail.com 
+        | All Rights Reserved</small>
+</footer>
+
+</body>
 </html>
