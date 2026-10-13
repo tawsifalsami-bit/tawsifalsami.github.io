@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sami's Photo Gallery</title>
 
 <style>
@@ -16,150 +17,72 @@ body {
     font-family: Arial, sans-serif;
     background: #0b1020;
     color: white;
+    padding: 20px;
 }
 
 header {
     text-align: center;
-    padding: 35px 15px;
-    background: #121a30;
-    border-bottom: 1px solid #293452;
+    padding: 25px 10px;
 }
 
 header h1 {
-    color: #64f4ac;
-    font-size: 28px;
-}
-
-header p {
-    color: #c5cce0;
-    margin-top: 10px;
-}
-
-nav {
-    background: #151e35;
-    padding: 14px 8px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 9px 12px;
-    border-radius: 20px;
-}
-
-nav a:hover {
-    background: #64f4ac;
-    color: #0b1020;
-}
-
-.intro {
-    text-align: center;
-    padding: 35px 15px 15px;
-}
-
-.intro h2 {
-    color: #64f4ac;
+    font-size: 30px;
+    color: #60a5fa;
     margin-bottom: 10px;
 }
 
-.intro p {
-    color: #c5cce0;
-    line-height: 1.8;
+header p {
+    color: #cbd5e1;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
 }
 
 .gallery {
-    max-width: 1100px;
-    margin: auto;
-    padding: 30px 18px 55px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    max-width: 900px;
+    margin: 25px auto;
 }
 
-.photo-card {
+.photo {
+    background: #111a30;
+    padding: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    background: #151e35;
-    border: 1px solid #293452;
-    border-radius: 18px;
-    transition: 0.3s;
 }
 
-.photo-card:hover {
-    transform: translateY(-5px);
-    border-color: #64f4ac;
-}
-
-.photo-card img {
-    display: block;
+.photo img {
     width: 100%;
     height: 260px;
-    object-fit: cover;
-    background: #202b43;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
 }
 
-.photo-card h3 {
-    color: #64f4ac;
-    padding: 15px 10px 5px;
+.photo p {
     text-align: center;
-}
-
-.photo-card p {
-    color: #c5cce0;
-    text-align: center;
-    padding: 0 10px 18px;
-    font-size: 14px;
-}
-
-.back {
-    text-align: center;
-    padding: 0 15px 45px;
-}
-
-.button {
-    display: inline-block;
-    background: #64f4ac;
-    color: #0b1020;
-    text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 25px;
-    font-weight: bold;
+    padding: 10px 0 5px;
+    color: #e2e8f0;
 }
 
 footer {
     text-align: center;
-    background: #121a30;
-    border-top: 1px solid #293452;
-    padding: 25px 15px;
-    color: #9ca8c5;
-    line-height: 1.8;
+    padding: 25px 10px;
+    color: #94a3b8;
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 23px;
-    }
-
+@media (max-width: 500px) {
     .gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
-        padding: 20px 12px 40px;
-    }
-
-    .photo-card img {
-        height: 190px;
-    }
-
-    .photo-card h3 {
-        font-size: 15px;
-    }
-
-    nav a {
-        font-size: 12px;
-        padding: 8px;
+        grid-template-columns: 1fr;
     }
 }
 </style>
@@ -168,74 +91,27 @@ footer {
 <body>
 
 <header>
-    <h1>📸 SAMI'S PHOTO GALLERY</h1>
-    <p>✨ My Life • My Moments • My Memories ✨</p>
+    <h1>📸 Sami's Photo Gallery</h1>
+    <p>Welcome to my personal photo collection.</p>
+    <a class="back-button" href="../index.html">← Back to Home</a>
 </header>
-
-<nav>
-    <a href="../index.html">🏠 Home</a>
-    <a href="../about.html">👤 About Me</a>
-    <a href="index.html">📸 Photos</a>
-    <a href="../gaming.html">🎮 Gaming</a>
-    <a href="../friends.html">👥 Friends</a>
-    <a href="../tour.html">🌍 Tour</a>
-    <a href="../videos.html">🎬 Videos</a>
-    <a href="../social.html">🔗 Social</a>
-</nav>
-
-<section class="intro">
-    <h2>🖼️ My Personal Memories</h2>
-    <p>Welcome to my personal photo gallery!<br>
-    Here I share my favourite pictures and memories.</p>
-</section>
 
 <main class="gallery">
 
-    <div class="photo-card">
-        <img src="../images/SAMI_01.jpg" alt="photos">
-        <h3>📸 Memory 01</h3>
-        <p>A special moment from my life.</p>
+    <div class="photo">
+        <img src="IMG-20251109-WA0201.jpg" alt="Sami Photo 1">
+        <p>My Photo 01</p>
     </div>
 
-    <div class="photo-card">
-        <img src="../images/SAMI_02.jpg" alt="photos">
-        <h3>📸 Memory 02</h3>
-        <p>One of my favourite pictures.</p>
-    </div>
-
-    <div class="photo-card">
-        <img src="../images/SAMI_03.jpg" alt="photos">
-        <h3>📸 Memory 03</h3>
-        <p>Another beautiful memory.</p>
-    </div>
-
-    <div class="photo-card">
-        <img src="../images/SAMI_04.jpg" alt="photos">
-        <h3>📸 Memory 04</h3>
-        <p>Moments worth remembering.</p>
-    </div>
-
-    <div class="photo-card">
-        <img src="../images/SAMI_05.jpg" alt="photos">
-        <h3>📸 Memory 05</h3>
-        <p>My personal photo collection.</p>
-    </div>
-
-    <div class="photo-card">
-        <img src="../images/SAMI_06.jpg" alt="photos">
-        <h3>📸 Memory 06</h3>
-        <p>More memories from my journey.</p>
+    <div class="photo">
+        <img src="IMG_20261004_205351.jpg" alt="Sami Photo 2">
+        <p>My Photo 02</p>
     </div>
 
 </main>
 
-<div class="back">
-    <a class="button" href="../index.html">🏠 Back to Home</a>
-</div>
-
 <footer>
-    <p>Made with ❤️ by Tawsif Al Sami</p>
-    <p>© 2026 Sami's Photo Gallery</p>
+    <p>© 2026 Sami | My Personal Gallery</p>
 </footer>
 
 </body>
