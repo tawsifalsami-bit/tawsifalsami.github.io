@@ -24,7 +24,24 @@ nav a:hover{background:#64f4ac;color:#07111c}
 .card h3{color:#64f4ac;margin-bottom:10px}
 .card p{color:#c4ccda;line-height:1.6}
 h2.section-title{text-align:center;margin:15px 0 25px}
-footer{text-align:center;padding:25px;color:#aaa;margin-top:30px}
+footer{text-align:center;padding:25px;color:#aaa;margin-top:30px} /* Make text selection more difficult */
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+}
+
+/* Prevent dragging images */
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+/* Keep links and buttons usable */
+a, button {
+    -webkit-user-select: none;
+    user-select: none;
+}
 </style>
 </head>
 
