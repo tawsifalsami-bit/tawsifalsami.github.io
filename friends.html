@@ -71,43 +71,71 @@ nav a:hover {
 .intro p {
     color: #c5cce0;
     line-height: 1.8;
+    max-width: 650px;
+    margin: auto;
 }
 
-.cards {
-    max-width: 1000px;
+.section-title {
+    text-align: center;
+    color: #64f4ac;
+    margin: 25px 0 5px;
+}
+
+.gallery {
+    max-width: 1100px;
     margin: auto;
-    padding: 25px 18px 55px;
+    padding: 25px 18px 45px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.card {
+.friend-card {
     background: #151e35;
     border: 1px solid #293452;
-    border-radius: 20px;
-    padding: 30px 20px;
+    border-radius: 18px;
+    padding: 12px;
     text-align: center;
+    overflow: hidden;
     transition: 0.3s;
 }
 
-.card:hover {
+.friend-card:hover {
     border-color: #64f4ac;
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
 
-.emoji {
-    font-size: 45px;
+.friend-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    background: #202c45;
 }
 
-.card h3 {
+.friend-card h3 {
     color: #64f4ac;
-    margin: 12px 0;
+    margin: 15px 5px 8px;
 }
 
-.card p {
+.friend-card p {
     color: #c5cce0;
-    line-height: 1.7;
+    line-height: 1.6;
+    padding: 0 5px 8px;
+    overflow-wrap: anywhere;
+}
+
+.empty-message {
+    text-align: center;
+    color: #c5cce0;
+    padding: 10px 20px 30px;
+    line-height: 1.8;
+}
+
+.button-area {
+    text-align: center;
+    padding: 0 15px 35px;
 }
 
 .button {
@@ -118,11 +146,6 @@ nav a:hover {
     font-weight: bold;
     padding: 12px 22px;
     border-radius: 25px;
-    margin: 10px 0 35px;
-}
-
-.button-area {
-    text-align: center;
 }
 
 footer {
@@ -149,8 +172,27 @@ footer a {
         padding: 8px;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        padding: 20px 12px 35px;
+    }
+
+    .friend-card {
+        padding: 8px;
+        border-radius: 12px;
+    }
+
+    .friend-card img {
+        height: 180px;
+    }
+
+    .friend-card h3 {
+        font-size: 15px;
+    }
+
+    .friend-card p {
+        font-size: 12px;
     }
 }
 </style>
@@ -180,34 +222,44 @@ footer a {
         Some moments become memories,
         and some friends become family.
         This page is dedicated to friendship
-        and the good times we share.
+        and the good times we share. ❤️
     </p>
 </section>
 
-<main class="cards">
+<h2 class="section-title">📸 My Friends Gallery</h2>
 
-    <article class="card">
-        <div class="emoji">🫂</div>
-        <h3>Best Friends</h3>
-        <p>My closest friends and the memories we share.</p>
+<p class="empty-message">
+    Our friendship, our memories, our story! 💚
+</p>
+
+<main class="gallery">
+
+    <!-- FRIEND 1 -->
+    <article class="friend-card">
+        <img src="friends/friend1.jpg" alt="Friend 1">
+        <h3>My Friend 1</h3>
+        <p>A friend who makes life memorable ❤️</p>
     </article>
 
-    <article class="card">
-        <div class="emoji">📸</div>
-        <h3>Friends Gallery</h3>
-        <p>Our favourite photos will be added here later.</p>
+    <!-- FRIEND 2 -->
+    <article class="friend-card">
+        <img src="friends/friend2.jpg" alt="Friend 2">
+        <h3>My Friend 2</h3>
+        <p>Friends forever 🤝</p>
     </article>
 
-    <article class="card">
-        <div class="emoji">😂</div>
-        <h3>Fun Moments</h3>
-        <p>Funny stories and unforgettable times together.</p>
+    <!-- FRIEND 3 -->
+    <article class="friend-card">
+        <img src="friends/friend3.jpg" alt="Friend 3">
+        <h3>My Friend 3</h3>
+        <p>Beautiful memories together 💚</p>
     </article>
 
-    <article class="card">
-        <div class="emoji">🌟</div>
-        <h3>Special Memories</h3>
-        <p>Celebrations, adventures and memorable days.</p>
+    <!-- FRIEND 4 -->
+    <article class="friend-card">
+        <img src="friends/friend4.jpg" alt="Friend 4">
+        <h3>My Friend 4</h3>
+        <p>Good friends, great memories 🌟</p>
     </article>
 
 </main>
@@ -218,6 +270,12 @@ footer a {
 
 <footer>
     <p>Made with ❤️ by Tawsif Al Sami</p>
+    <p>
+        Email:
+        <a href="mailto:tawsifalsami@gmail.com">
+            tawsifalsami@gmail.com
+        </a>
+    </p>
     <p>© 2026 Tawsif Al Sami | All Rights Reserved</p>
 </footer>
 
